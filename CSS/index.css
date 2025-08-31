@@ -1,0 +1,83 @@
+/* - - - - - - - - - - ESTILOS DE HEADER ESPECIALES PARA EL INDEX - - - - - - - - - - */
+/* Estado inicial */
+header
+{
+    background-color: transparent;
+    box-shadow: 0 2px 5px transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .headerButton{background-color: transparent;}
+
+/* Estado cuando hay scroll */
+header.scrolled 
+{
+    background-color: #eeeef0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header.scrolled .headerButton
+{
+    background-color: #93df37;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled .headerButton:hover{background-color: #008d0a;}
+
+
+
+/* - - - - - - - - - - CONTENEDOR DE VIDEO - - - - - - - - - - */
+.videoContainer
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.videoContainer::before
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #00000080;
+    z-index: 1;
+}
+
+.backgroundVideo
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    */
+    object-fit: cover;
+    z-index: 0;
+}
+
+.content
+{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 10rem 5rem;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.content h1
+{
+    font-size: clamp(1.2rem, 4.6vw, 7rem);;
+    font-family: "Aleo", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #eeeef0;
+    text-shadow: 5px 5px 5px #000;
+}

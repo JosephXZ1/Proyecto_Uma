@@ -1,0 +1,186 @@
+/* Reset */
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HTML --- */
+html
+{
+    /* Tipografía */
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    /* Otros */
+    scroll-behavior: smooth;
+}
+
+/* - - - - - - - - - - HEADER - - - - - - - - - - */
+header
+{
+    width: 100%;
+    height: 15vh;
+    padding-left: 2rem;
+    background-color: #eeeef0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: "Aleo", serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+}
+
+header a
+{
+    gap: 1rem;
+    font-size: 1.3rem;
+    color: #707070;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+header a:hover{color: #744a22;}
+
+header a img{width: 15rem;}
+
+header .headerButton
+{
+    width: 7vw;
+    height: 100%;
+    background-color: #93df37;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+header .headerButton:hover{background-color: #008d0a;}
+
+header .headerButton img
+{
+    width: 73%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* - - - - - - - - - - MENU DE NAVEGACION - - - - - - - - - - */
+.navBar
+{
+    position: fixed;
+    top: 15%;
+    right: -21vw;
+    width: 21vw;
+    height: 85vh;
+    padding: 1.7rem;
+    background: #008d0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+}
+
+.navBar.active{right: 0;}
+
+.navBar ul
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navBar li
+{
+    width: 100%;
+    height: 100%;
+    margin: 3px 0;
+}
+
+.navBar a
+{
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    font-size: 1.5rem;
+    font-style: normal;
+    color: #f4ffcc;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all ease 0.3s;
+}
+
+.navBar a:hover
+{
+    color: #f7e41a;
+    font-style: oblique 7deg;
+}
+
+.navBar a img
+{
+    width: 2.7rem;
+    height: auto;
+}
+
+#sos
+{
+    width: 10px;
+    height: 2000px;
+}
+
+/* - - - - - - - - - - BOTON DE SCROLL HACIA ARRIBA - - - - - - - - - - */
+.scrollToTop
+{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1;
+    padding: 0.6rem;
+    border-radius: 17%;
+    background-color: #93df37;
+    border: 5px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.scrollToTop.visible
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scrollToTop span
+{
+    font-size: 3.5rem;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.scrollToTop:hover
+{
+    background-color: #fff;
+    border: 5px solid #93df37;
+}
+
+.scrollToTop:hover span
+{
+    color: #93df37;
+    transform: translateY(-5px);
+}
+
+/* - - - - - - - - - - FOOTER - - - - - - - - - - */
