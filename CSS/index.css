@@ -81,3 +81,40 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
     color: #eeeef0;
     text-shadow: 5px 5px 5px #000;
 }
+
+/* - - - - - - - - - - CONTENEDORES DE TEXTO - - - - - - - - - - */
+.text, .uraF
+{
+    margin: 7rem auto;
+    width: 85%;
+    text-align: center;
+    color: #707070;
+    /*! background-color: aqua; */
+}
+
+.text h2
+{
+    margin-bottom: 2rem;
+    font-family: "Aleo", serif;
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+
+.text p, .uraF p
+{
+    margin-top: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 450;
+}
+
+.uraF
+{
+    width: 90%;
+}
+
+.uraF img
+{
+    max-width: 40vw;
+    height: auto;
+}
