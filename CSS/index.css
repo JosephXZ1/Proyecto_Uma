@@ -82,7 +82,7 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
     text-shadow: 5px 5px 5px #000;
 }
 
-/* - - - - - - - - - - CONTENEDORES DE TEXTO - - - - - - - - - - */
+/* - - - - - - - - - - CONTENEDORES BASICOS - - - - - - - - - - */
 .text, .uraF
 {
     margin: 7rem auto;
@@ -108,13 +108,119 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
     font-weight: 450;
 }
 
-.uraF
-{
-    width: 90%;
-}
+.uraF{width: 90%;}
 
 .uraF img
 {
     max-width: 40vw;
     height: auto;
+}
+
+.uraF p
+{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+/* - - - - - - - - - - CONTENEDORES PARTIDOS - - - - - - - - - - */
+
+.splitCont
+{
+    margin: 2rem auto;
+    display: flex;
+    width: 90%;
+    height: 70vh;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.splitCont div
+{
+    width: 50%;
+    height: 100%;
+    background-color: #eeeef0;
+}
+
+.splitCont a
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+
+    text-decoration: none;
+
+    position: relative;
+
+    background-image: url("../Multimedia/Imagenes/esp1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.splitCont a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+
+    z-index: 10;
+}
+
+.splitCont a:hover::before
+{
+    background-color: #00000081;
+}
+
+.splitCont a h3
+{
+    font-family: "Aleo", serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: transparent;
+    text-shadow: 3px 3px 1px transparent;
+    position: absolute;
+    transition: all 0.3s ease;
+    z-index: 11;
+}
+
+.splitCont a:hover h3
+{
+    color: #eeeef0;
+    text-shadow: 3px 3px 1px #000;
+}
+
+.splitCont div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 3rem;   
+    color: #707070;
+}
+
+.splitCont div h3
+{
+    font-family: "Aleo", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.splitCont div p
+{
+    font-size: 1.6rem;
+    font-weight: 500;
+
 }
