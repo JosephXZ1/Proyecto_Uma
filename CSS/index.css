@@ -224,3 +224,214 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
     font-weight: 500;
 
 }
+
+
+
+.cards
+{
+    
+    margin: 7rem auto;
+    width: 100%;
+    height: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem 0 0 0;
+    overflow: hidden;
+}
+
+/*
+
+.cards a
+{
+    width: 18vw;    
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2rem;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px transparent;
+    transform: scale(1);
+    transition: all ease 0.5s;
+    position: relative;
+}
+
+
+.cards a:nth-child(1){background-image: url("../Multimedia/Imagenes/cards1.jpg");}
+.cards a:nth-child(2){background-image: url("../Multimedia/Imagenes/cards2.jpg");}
+.cards a:nth-child(3){background-image: url("../Multimedia/Imagenes/cards3.jpg");}
+.cards a:nth-child(4){background-image: url("../Multimedia/Imagenes/cards4.jpg");}
+
+.cards a::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+
+.cards a:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 7px #000;
+}
+
+.cards a:hover::before
+{
+    background-color: #00000068;
+    z-index: 1;
+}
+
+
+
+.cards a h3
+{
+    color: transparent;
+    text-shadow: 2px 2px 2px transparent;
+    transition: all ease 0.3s;
+    margin: 0;
+    z-index: 3;
+}
+
+.cards a:hover h3
+{
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.cards a h3
+{
+    font-size: 2.5rem;
+    font-family: "Aleo", serif;
+    font-weight: 500;
+}*/
+
+.cards a
+{
+    width: 18vw;
+    height: 415px;
+    margin: 0 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 10px rgba(0,0,0, .5);
+    text-decoration: none;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: transform .3s ease;
+}
+
+.cards a::before
+{
+    content: "";
+    position: absolute;
+    width: 180%;
+    height: 120%;
+    background: conic-gradient(
+        #01FEF2,
+        #FD9FEB,
+        #FD9FEB,
+        #01FEF2,
+        #01FE38,
+        #01FE38,
+        #DDE104,
+        #DDE104,
+        #01FEF2
+        );
+}
+
+.cards a::after
+{
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 93%;
+    height: 95%;
+    border-radius: .4em;
+
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards a:nth-child(1)::after{background-image: url("../Multimedia/Imagenes/cards1.jpg");}
+.cards a:nth-child(2)::after{background-image: url("../Multimedia/Imagenes/cards2.jpg");}
+.cards a:nth-child(3)::after{background-image: url("../Multimedia/Imagenes/cards3.jpg");}
+.cards a:nth-child(4)::after{background-image: url("../Multimedia/Imagenes/cards4.jpg");}
+
+.cards a:hover
+{
+    transform: scale(1.1);
+}
+
+.cards a:hover::before
+{
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin
+{
+    to
+        {
+            transform: rotate(360deg);
+        }
+}
+
+.cards a div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    height: 95%;
+    padding: 2rem;
+    background-color: transparent;
+    z-index: 10;
+    border-radius: 0.8rem;
+    transition: background-color .3s ease;
+}
+
+.cards a div:hover
+{
+    background-color: rgba(0, 0, 0, 0.511);
+}
+
+.cards a div h3
+{
+    font-family: "Aleo", serif;
+    font-size: 2.5rem;
+    font-weight: 500;  
+    text-align: center;
+    color: transparent;
+    transition: color .3s ease;
+}
+
+.cards a div:hover h3
+{
+    color: #fff;
+}
