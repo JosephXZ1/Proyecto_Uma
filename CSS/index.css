@@ -140,12 +140,10 @@
     height: 100%;
     text-decoration: none;
     position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .splitCont a:nth-child(1){background-image: url("../Multimedia/Imagenes/esp1.jpg");}
+.splitCont a:nth-child(2){background-image: url("../Multimedia/Imagenes/esp2.jpg");}
 
 .splitCont a::before
 {
@@ -254,7 +252,7 @@
     );
 }
 
-.cards a:hover::before{animation: spin 1.5s infinite linear;}
+.cards a:hover::before{animation: spin 3s infinite linear;}
 
 @keyframes spin 
 {
@@ -312,3 +310,39 @@
 
 .cards a:nth-child(3) div h3{font-size: 2rem;}
 .cards a div:hover h3{color: #fff;}
+
+
+.meme
+{
+    width: 85%;
+    height: 80vh;
+    margin: 1rem auto;
+    background-image: url("../Multimedia/Imagenes/Urara_meme.jpg");
+    border: 3px solid #707070;
+    border-radius: 1rem;
+}
+
+.me
+{
+    width: 90%;
+    height: 40vh;
+    margin: 5rem auto;
+    padding: 1rem;
+}
+
+.me p
+{
+    display: block;
+    width: 40%;
+    text-align: center;
+    font-size: 1.53rem;
+    font-weight: 450;
+    margin: 0 auto;
+    color: #707070;
+}
+
+.me img
+{
+    width: 50%;
+    margin: 0 auto;
+}

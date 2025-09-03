@@ -13,6 +13,13 @@
     justify-content: center;
 }
 
+.bgImg
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* --- HTML --- */
 html
 {
@@ -146,6 +153,7 @@ html
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.3s ease;
+    z-index: 1000;
 }
 
 .scrollToTop.visible
