@@ -16,23 +16,23 @@
 
 </head>
 <body>
-    <header>
-        <a href="#" class="brand">
+    <header class="header flex">
+        <a href="#" class="brand flex">
             <h1>Cómo jugar</h1>
             <img src="Multimedia/Imagenes/logo_Uma.png" alt="Pagina principal">
         </a>
         <!-- botón como button para accesibilidad -->
-        <button class="headerButton" aria-label="Abrir menú">
+        <button class="headerButton flex" aria-label="Abrir menú">
             <img id="menuIcon" src="Multimedia/Imagenes/menu2.png" alt="Menú">
         </button>
-        <nav class="navBar">
-            <ul>
-                <li><a href="umas.html"><img src="Multimedia/Imagenes/menuU.png" alt="categoria de Umas">Las Umas</a></li>
-                <li><a href="legacy.html"><img src="Multimedia/Imagenes/menuL.png" alt="categoria de legado">Legado</a></li>
-                <li><a href="train.html"><img src="Multimedia/Imagenes/menuT.png" alt="categoria de entrenamiento">Entrenamiento</a></li>
-                <li><a href="cards.html"><img src="Multimedia/Imagenes/menuC.png" alt="categoria de cartas">Cartas</a></li>
-                <li><a href="stats.html"><img src="Multimedia/Imagenes/menuS.png" alt="categoria de estadisticas">Estadísticas</a></li>
-                <li><a href="strategy.html"><img src="Multimedia/Imagenes/menuH.png" alt="categoria de estrategia">Estrategia</a></li>
+        <nav class="navBar flex">
+            <ul class="flex">
+                <li><a href="umas.html" class="flex"><img src="Multimedia/Imagenes/menuU.png" alt="categoria de Umas">Las Umas</a></li>
+                <li><a href="legacy.html" class="flex"><img src="Multimedia/Imagenes/menuL.png" alt="categoria de legado">Legado</a></li>
+                <li><a href="train.html" class="flex"><img src="Multimedia/Imagenes/menuT.png" alt="categoria de entrenamiento">Entrenamiento</a></li>
+                <li><a href="cards.html" class="flex"><img src="Multimedia/Imagenes/menuC.png" alt="categoria de cartas">Cartas</a></li>
+                <li><a href="stats.html" class="flex"><img src="Multimedia/Imagenes/menuS.png" alt="categoria de estadisticas">Estadísticas</a></li>
+                <li><a href="strategy.html" class="flex"><img src="Multimedia/Imagenes/menuH.png" alt="categoria de estrategia">Estrategia</a></li>
             </ul>
             <!-- contenido -->
         </nav>
@@ -44,7 +44,7 @@
                 <source src="Multimedia/Videos/Index_BG.mp4" type="video/mp4" />
                 Tu navegador no soporta videos en HTML5.<!--Mensaje que aparece si el navegador no soporta el video-->
             </video>
-            <div class="content">
+            <div class="content flex">
                 <h1>¿Te has preguntado cómo jugar el nuevo fenomeno Umamusume? No eres el único</h1>
             </div>
         </div>
@@ -59,42 +59,37 @@
             <p>Cabe aclarar que esto es especialmente para los jugadores del URA Finale (Modo carrera del juego)</p>
         </section>
 
-        <section class="splitCont">
-            <a href="#">
+        <section class="splitCont flex">
+            <a href="#" class="flex">
                 <h3>Ver más</h3>
             </a>
-            <div>
+            <div class="flex">
                 <h3>Primero... ¿Qué son las Umas?</h3>
                 <p>Apartado rápido para conocer lo básico que necesitas saber para de las Umas, nos centraremos en algunos personajes, que tipo de corredoras son y características que se verán a mayor profundidad en otros apartados</p>
             </div>
         </section>
 
-        <section class="cards">
-            <a href="#">
-                <div>
-                <h3 class="sopranos">El legado</h3>
+        <section class="cards flex">
+            <a href="legacy.html" class="flex">
+                <div class="flex">
+                <h3>El legado</h3>
                 </div>
             </a>
-            <a href="#">
-                <div>
-                <h3 class="sopranos">Las cartas</h3>
+            <a href="cards.html" class="flex">
+                <div class="flex">
+                <h3>Las cartas</h3>
                 </div>
             </a>
-            <a href="#">
-                <div>
-                <h3 class="sopranos">El entreno</h3>
+            <a href="train.html" class="flex">
+                <div class="flex">
+                <h3>Entrenamiento</h3>
                 </div>
             </a>
-            <a href="#">
-                <div>
-                <h3 class="sopranos">Estadísticas y estilos</h3>
+            <a href="stats.html" class="flex">
+                <div class="flex">
+                <h3>Estadísticas y estilos</h3>
                 </div>
             </a>
-            
-            <!--<a href=""><h3>El legado</h3></a>
-            <a href=""><h3>Las cartas</h3></a>
-            <a href=""><h3>El entreno</h3></a>
-            <a href=""><h3>Estadísticas y estilos</h3></a>-->
         </section>
     </main>
 
@@ -102,7 +97,7 @@
 
     </footer>
 
-    <a href="#" class="scrollToTop" id="scrollBtn">
+    <a href="#" class="scrollToTop flex" id="scrollBtn">
         <span class="material-symbols-outlined">arrow_circle_up</span>
     </a>
 

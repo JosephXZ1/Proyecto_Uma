@@ -1,0 +1,35 @@
+CATEGORÍAS DE MENU
+- Las Umas
+- Escoger cartas y legado inicial
+- Entrenamientos (junto con los eventos de las cartas)
+- Las cartas de apoyo (junto con sus habilidades)
+- Estadisticas y estilos
+- Estrategía de carreras (front, pace, late, end y su relacion con las stats)
+
+
+-UMAS
+
+-LEGADO
+Escoger un legado inicial puede ser complicado, sobre todo cuando uno no tiene experiencia, no sabe que onda con el juego o al ser novato no cuentas con legados fuertes, pero ¿esto que significa? Te explico.
+A la hora de empezar una nueva carrera, el juego te dice que escojas aparte de tu personaje, el legado que lo acompañará, este legado basicamente lo que hace es que aumenta incialmente las estadisticas de tu Uma (puede ser de determinadas stats y puede aumentar desde +5 hasta incluso +65 dependiendo del legado) y asi puedas iniciar tu carrera sin estar tan rezagado en estadisticas, aunque dependiendo de que tan fuerte sea el legado tendrás mas o menor impulso inicial, y en los primeros intentos el impulso será minimo por no tener legado fuerte, pero ojo, no solo son las stats iniciales lo que aumentan, porque influyen en mas cosas.
+El legado tambien puede traer mejoras en estilos de carrera, mejorando la clase del estilo de tu personaje (ej. si tu Uma tiene clase B en carreras tipo long, un legado puede hacer que suba a clase A, o si es clase G en estilo pace-chaser, puede pasar a clase F) lo que puede beneficiar tus estrategias de carrera.
+Tambien los legados tiene el sistema "Sparks" que basicamente es un power-up de stats, como al inicio, pero que sucede de forma aleatoria en medio de la carrera como evento aleatorio, donde tu Uma recibirá otro impulso que aumentara sus stats, estos eventos son llamados "inspiracion" y aparecen en un momento random del juego. Estos sparks se categorizan en estrellas (mientras mas tengan, mejor) y pueden aumentar desde velocidad hasta power o resistencia.
+Los legados se califican con letras, desde la G hasta la S, un legado fuerte suele estar entre la B y la S, asi que si tienes un legado con la letra G, deberás formar legados fuertes para triunfar y eso solo se consigue mediante las derrotas iniciales porque si, lo mas probable es que pierdas (y bastante) al inicio, pero solo asi podrás avanzar.
+
+-CARTAS
+Las cartas son definitorias casi que en toda la carrera, ya que son las que nos daran apoyo y nos ayudaran en el entrenamiento, las cartas son el pilar para avanzar y aqui si, tendras que hacer un mazo inicial que supla todas tus necesidades y esto dependerá de tu Uma, tendrás que ver que estilos y sobre todo que porcentaje de mejora tiene un determinado stat, ya que las cartas en principio pueden mejorar un stat mejor que otros
+Algunas mejoran la velocidad
+Otras la stamina
+Otras el power
+Otras el guts
+Y otras la inteligencia
+Y asi sucesivamente todas las cartas, ofrecen mejoras en las diferentes stats, obviamente se buscará un mazo optimizado y adecuado ya que si pones muchas cartas que mejoren la velocidad, aunque mejoren tu velocidad y tengas nivel S+, las demas stats se descuidan y pues no puedes ganar solo con velocidad, pero si tu Uma tiene un porcentaje de mejora especial en stamina, puedes equipar solo una carta de stamina o a lo mucho 2 para la carrera, la cosa esta en priorizar que stats tienen 0% de plus de mejora, si velocidad tiene 0% pues equipas 2 o 3 cartas maximo para ese stat, 2 de power y 1 de stamina con ese 20% extra que te da tu Uma en stamina por ejemplo, la clave esta en mejorar priorizando atributos (que de paso, los 3 primeros son la clave, wit con una carta basta y guts de momento no es importante, es de hecho el stat menos util del jeugo pero de eso hablaremos luego)
+Luego esta el tema de la clase de la carta, porque algunas tambien se clasifican con diferentes tipos, siendo las mas comunes y normales las clase G y las mas deseadas las SR y SSR.
+Pero ojo, que lleves puras cartas SSR no significa que ya ganaste, todo depende tambien del nivel de tu carta y cuantas Uncap (cuanto potencial desbloqueado tienes si la tienes desbloqueada al 100%) para que asi las cartas funcionen, una carta SR masterizada y llevada al limite puede superar a cualquier SR sin mejorar o a medias, y todo es por los bonos y efectos en los entrenamientos que te dan esas cartas, que a mayor nivel, mejor serán, asi que antes de competir tienes que mejorar lo mas que puedas tus cartas, aunque tampoco uses las R, ya que los efectos y bonos seran menores, una combinacion entre SSR y SR bien mejoradas sera la clave.
+Del mismo modo tienes que analizar que habilidades pueden ofrecer y cual se adecua mejor con tu Uma, si necesitas habilidades que recuperen stamina (las azules, de las mas recomendadas) o necesiten velocidad maxima o concentración (las amarillas) o (las verdes) y tambien estas habilidades se desempeñan mejor dependiendo de si tu Uma es front-runner, pace-chaser etc.
+Tambien existen las cartas Pal o friend, cartas que a simple vista no suben stats especificas pero que son muy recomendable usarlas, ya que su efecto es mejorar de forma pareja todas las estadísticas, poder reducir las posibilidades de fallo de entrenamiento (tener mas suerte en los entrenamientos sobre todo cuando hay poca energía pero quieres apostar por un entrenamiento rainbow) y permiten ganar mas energía despues de entrenamientos, reduciendo las veces que necesites un descanso ya que estas ocupan un turno y cada turno es crucial, por eso son importantes, permiten entrenar mas y recuperar mas energía, a su vez que mejoran el estado de anímo de tu Uma, algo esencial para entrenar y hacer carreras.
+De ahi, eso es en lo que te debes fijar a la hora de hacer tu mazo, que stat es prioridad, que habilidades ofrecen las cartas y que tantos bonos tienen, y ver las cartas meta (como lo es Kitasan Black, Super Creek, Satono Diamond, etc.), un proceso analitico bastante complejo pero asi esta diseñado el juego, para analizar y ver a futuro.
+
+
+-ENTRENAMIENTOS
+El entrenamiento es crucial

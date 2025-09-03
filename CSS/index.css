@@ -1,28 +1,28 @@
 /* - - - - - - - - - - ESTILOS DE HEADER ESPECIALES PARA EL INDEX - - - - - - - - - - */
 /* Estado inicial */
-header
+.header
 {
     background-color: transparent;
     box-shadow: 0 2px 5px transparent;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-header .headerButton{background-color: transparent;}
+.header .headerButton{background-color: transparent;}
 
 /* Estado cuando hay scroll */
-header.scrolled 
+.header.scrolled 
 {
     background-color: #eeeef0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header.scrolled .headerButton
+.header.scrolled .headerButton
 {
     background-color: #93df37;
     transition: background-color 0.3s ease;
 }
 
-header.scrolled .headerButton:hover{background-color: #008d0a;}
+.header.scrolled .headerButton:hover{background-color: #008d0a;}
 
 
 
@@ -49,11 +49,6 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
     position: absolute;
     width: 100%;
     height: 100%;
-    /*
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    */
     object-fit: cover;
     z-index: 0;
 }
@@ -66,7 +61,6 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
     padding: 10rem 5rem;
     width: 85%;
     height: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
@@ -89,7 +83,6 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
     width: 85%;
     text-align: center;
     color: #707070;
-    /*! background-color: aqua; */
 }
 
 .text h2
@@ -127,7 +120,6 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
 .splitCont
 {
     margin: 2rem auto;
-    display: flex;
     width: 90%;
     height: 70vh;
     border-radius: 1rem;
@@ -143,23 +135,17 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
 
 .splitCont a
 {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     width: 50%;
     height: 100%;
-
     text-decoration: none;
-
     position: relative;
-
-    background-image: url("../Multimedia/Imagenes/esp1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.splitCont a:nth-child(1){background-image: url("../Multimedia/Imagenes/esp1.jpg");}
 
 .splitCont a::before
 {
@@ -171,7 +157,6 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
     height: 100%;
     background-color: transparent;
     transition: background-color 0.3s ease;
-
     z-index: 10;
 }
 
@@ -200,12 +185,8 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
 
 .splitCont div
 {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-
     padding: 3rem;   
     color: #707070;
 }
@@ -225,98 +206,16 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
 
 }
 
-
-
+/* ========== SLIDER CON LAS CARTAS ========== */
 .cards
 {
-    
-    margin: 7rem auto;
     width: 100%;
     height: 68vh;
-    display: flex;
-    justify-content: center;
+    margin: 7rem auto;
+    padding-top: 1.5rem;
     align-items: flex-start;
-    padding: 1.5rem 0 0 0;
     overflow: hidden;
 }
-
-/*
-
-.cards a
-{
-    width: 18vw;    
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 2rem;
-    padding: 2rem;
-    text-align: center;
-    text-decoration: none;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 1rem;
-    box-shadow: 2px 2px 2px transparent;
-    transform: scale(1);
-    transition: all ease 0.5s;
-    position: relative;
-}
-
-
-.cards a:nth-child(1){background-image: url("../Multimedia/Imagenes/cards1.jpg");}
-.cards a:nth-child(2){background-image: url("../Multimedia/Imagenes/cards2.jpg");}
-.cards a:nth-child(3){background-image: url("../Multimedia/Imagenes/cards3.jpg");}
-.cards a:nth-child(4){background-image: url("../Multimedia/Imagenes/cards4.jpg");}
-
-.cards a::before
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border-radius: 1rem;
-}
-
-.cards a:hover
-{
-    transform: scale(1.1);
-    box-shadow: 0px 8px 7px #000;
-}
-
-.cards a:hover::before
-{
-    background-color: #00000068;
-    z-index: 1;
-}
-
-
-
-.cards a h3
-{
-    color: transparent;
-    text-shadow: 2px 2px 2px transparent;
-    transition: all ease 0.3s;
-    margin: 0;
-    z-index: 3;
-}
-
-.cards a:hover h3
-{
-    color: #fff;
-    text-shadow: 2px 2px 2px #000;
-}
-
-.cards a h3
-{
-    font-size: 2.5rem;
-    font-family: "Aleo", serif;
-    font-weight: 500;
-}*/
 
 .cards a
 {
@@ -324,114 +223,92 @@ header.scrolled .headerButton:hover{background-color: #008d0a;}
     height: 415px;
     margin: 0 2rem;
     border-radius: 1rem;
-    box-shadow: 0 10px 10px rgba(0,0,0, .5);
-    text-decoration: none;
-
     position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     overflow: hidden;
     cursor: pointer;
-
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
     transition: transform .3s ease;
 }
 
+.cards a:hover{transform: scale(1.1);}
+
+/* Layer de fondo con el efecto arcoíris */
 .cards a::before
 {
     content: "";
     position: absolute;
     width: 180%;
     height: 120%;
+
     background: conic-gradient(
-        #01FEF2,
-        #FD9FEB,
         #FD9FEB,
         #01FEF2,
         #01FE38,
-        #01FE38,
         #DDE104,
         #DDE104,
-        #01FEF2
-        );
+        #01FEF2,
+        #01FEF2,
+        #FD9FEB,
+        #FD9FEB
+    );
 }
 
+.cards a:hover::before{animation: spin 1.5s infinite linear;}
+
+@keyframes spin 
+{
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+/* Layer que contiene la imagen de fondo */
 .cards a::after
 {
     content: "";
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
     width: 93%;
     height: 95%;
-    border-radius: .4em;
-
+    border-radius: 0.4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 2rem;
-    color: #fff;
     font-weight: 500;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #fff;
 }
 
-.cards a:nth-child(1)::after{background-image: url("../Multimedia/Imagenes/cards1.jpg");}
-.cards a:nth-child(2)::after{background-image: url("../Multimedia/Imagenes/cards2.jpg");}
-.cards a:nth-child(3)::after{background-image: url("../Multimedia/Imagenes/cards3.jpg");}
-.cards a:nth-child(4)::after{background-image: url("../Multimedia/Imagenes/cards4.jpg");}
+.cards a:nth-child(1)::after { background-image: url("../Multimedia/Imagenes/cards1.jpg"); }
+.cards a:nth-child(2)::after { background-image: url("../Multimedia/Imagenes/cards2.jpg"); }
+.cards a:nth-child(3)::after { background-image: url("../Multimedia/Imagenes/cards3.jpg"); }
+.cards a:nth-child(4)::after { background-image: url("../Multimedia/Imagenes/cards4.jpg"); }
 
-.cards a:hover
-{
-    transform: scale(1.1);
-}
-
-.cards a:hover::before
-{
-    animation: spin 1.5s infinite linear;
-}
-
-@keyframes spin
-{
-    to
-        {
-            transform: rotate(360deg);
-        }
-}
-
+/* Layer de oscurecimiento y texto */
 .cards a div
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 93%;
     height: 95%;
     padding: 2rem;
-    background-color: transparent;
-    z-index: 10;
     border-radius: 0.8rem;
+    z-index: 10;
+    flex-direction: column;
+    background-color: transparent;
     transition: background-color .3s ease;
 }
 
-.cards a div:hover
-{
-    background-color: rgba(0, 0, 0, 0.511);
-}
+.cards a div:hover{background-color: rgba(0, 0, 0, 0.51);}
 
 .cards a div h3
 {
     font-family: "Aleo", serif;
     font-size: 2.5rem;
-    font-weight: 500;  
+    font-weight: 500;
     text-align: center;
     color: transparent;
     transition: color .3s ease;
 }
 
-.cards a div:hover h3
-{
-    color: #fff;
-}
+.cards a:nth-child(3) div h3{font-size: 2rem;}
+.cards a div:hover h3{color: #fff;}
