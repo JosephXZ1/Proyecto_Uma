@@ -28,6 +28,94 @@ html
     font-weight: 100;
     scroll-behavior: smooth;
 }
+/* - - - - - - - - - - FONDO - - - - - - - - - - */
+@keyframes cube 
+{
+    from
+    {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to
+    {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.background
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background li
+{
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #eeeef0;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 7s ease-in forwards infinite;
+}
+
+undefined
+.background li:nth-child(0)
+{
+    animation-delay: 0s;
+    left: 81vw;
+    top: 92vh;
+    border-color: #ffffff;
+}
+
+.background li:nth-child(1)
+{
+    animation-delay: 2s;
+    left: 31vw;
+    top: 64vh;
+}
+
+.background li:nth-child(2)
+{
+    animation-delay: 4s;
+    left: 3vw;
+    top: 15vh;
+}
+
+.background li:nth-child(3)
+{
+    animation-delay: 6s;
+    left: 65vw;
+    top: 24vh;
+}
+
+.background li:nth-child(4)
+{
+    animation-delay: 8s;
+    left: 48vw;
+    top: 72vh;
+}
+
+.background li:nth-child(5)
+{
+    animation-delay: 10s;
+    left: 96vw;
+    top: 40vh;
+    border-color: #ffffff;
+}
+
 
 /* - - - - - - - - - - HEADER - - - - - - - - - - */
 .header
@@ -182,3 +270,81 @@ html
 }
 
 /* - - - - - - - - - - FOOTER - - - - - - - - - - */
+footer
+{
+    width: 100%;
+    height: 37vh;
+    padding: 1rem 2rem;
+    background-color: #008d0a;
+    font-family: consolas, monospace;
+}
+
+footer div:nth-child(1)
+{
+    margin: 0 1rem;
+    width: 50%;
+    height: 100%;
+    color: #ffffff;
+    gap: 0.5rem;
+    padding: 2rem 0;
+}
+
+footer div:nth-child(1) h3
+{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+footer div:nth-child(1) p
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+footer div:nth-child(2)
+{
+    width: 50%;
+    height: 100%;
+    gap: 2.5rem;
+}
+
+footer div:nth-child(2) a
+{
+    width: 5.5vw;
+}
+
+footer div:nth-child(2) a img
+{
+    width: 100%;
+    height: auto;
+    transition: all 0.2s ease;
+}
+
+footer div a:hover img[src="Multimedia/Imagenes/L-Git.png"] {filter: brightness(0) saturate(100%) invert(19%) sepia(83%) saturate(1195%) hue-rotate(100deg) brightness(99%) contrast(108%);}
+footer div a:hover img[src="Multimedia/Imagenes/L-Insta.png"] {filter: brightness(0) saturate(100%) invert(19%) sepia(83%) saturate(1195%) hue-rotate(100deg) brightness(99%) contrast(108%);}
+footer div a:hover img[src="Multimedia/Imagenes/L-Twit.png"] {filter: brightness(0) saturate(100%) invert(19%) sepia(83%) saturate(1195%) hue-rotate(100deg) brightness(99%) contrast(108%);}
+footer div a:hover img[src="Multimedia/Imagenes/L-Red_1.png"] {filter: brightness(0) saturate(100%) invert(19%) sepia(83%) saturate(1195%) hue-rotate(100deg) brightness(99%) contrast(108%);}
+
+/* Pie de pagina Copyright */
+.copyright
+{
+    width: 100%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+    background-color: #005706;
+}
+
+.copyright p
+{
+    margin: 0;
+    color: #fff;
+    font-weight: 350;
+    justify-content: flex-start;
+}
+
+.copyright p img
+{
+    width: 220px;
+    margin: 0 0.5rem;
+}
