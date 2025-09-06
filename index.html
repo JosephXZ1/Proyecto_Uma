@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,20 +27,20 @@
     <header class="header flex">
         <a href="#" class="brand flex">
             <h1>Cómo jugar</h1>
-            <img src="Multimedia/Imagenes/logo_Uma.png" alt="Pagina principal">
+            <img src="Multimedia/Imagenes/logo_Uma.png" alt="Página principal">
         </a>
         <!-- botón como button para accesibilidad -->
-        <button class="headerButton flex" aria-label="Abrir menú">
+        <button class="headerButton flex transition" aria-label="Abrir menú">
             <img id="menuIcon" src="Multimedia/Imagenes/menu2.png" alt="Menú">
         </button>
         <nav class="navBar flex">
             <ul class="flex">
-                <li><a href="umas.html" class="flex"><img src="Multimedia/Imagenes/menuU.png" alt="categoria de Umas">Las Umas</a></li>
-                <li><a href="legacy.html" class="flex"><img src="Multimedia/Imagenes/menuL.png" alt="categoria de legado">Legado</a></li>
-                <li><a href="train.html" class="flex"><img src="Multimedia/Imagenes/menuT.png" alt="categoria de entrenamiento">Entrenamiento</a></li>
-                <li><a href="cards.html" class="flex"><img src="Multimedia/Imagenes/menuC.png" alt="categoria de cartas">Cartas</a></li>
-                <li><a href="stats.html" class="flex"><img src="Multimedia/Imagenes/menuS.png" alt="categoria de estadisticas">Estadísticas</a></li>
-                <li><a href="strategy.html" class="flex"><img src="Multimedia/Imagenes/menuH.png" alt="categoria de estrategia">Estrategia</a></li>
+                <li class="fullSize"><a href="umas.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuU.png" alt="categoria de Umas">Las Umas</a></li>
+                <li class="fullSize"><a href="legacy.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuL.png" alt="categoria de legado">Legado</a></li>
+                <li class="fullSize"><a href="train.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuT.png" alt="categoria de entrenamiento">Entrenamiento</a></li>
+                <li class="fullSize"><a href="cards.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuC.png" alt="categoria de cartas">Cartas</a></li>
+                <li class="fullSize"><a href="stats.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuS.png" alt="categoria de estadisticas">Estadísticas</a></li>
+                <li class="fullSize"><a href="strategy.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuH.png" alt="categoria de estrategia">Estrategia</a></li>
             </ul>
             <!-- contenido -->
         </nav>
@@ -48,7 +48,7 @@
 
     <main>
         <div class="videoContainer">
-            <video autoplay muted loop playsinline class="backgroundVideo">
+            <video autoplay muted loop playsinline class="backgroundVideo fullSize">
                 <source src="Multimedia/Videos/Index_BG.mp4" type="video/mp4" />
                 Tu navegador no soporta videos en HTML5.<!--Mensaje que aparece si el navegador no soporta el video-->
             </video>
@@ -64,7 +64,7 @@
             <p>Abarcaremos muchos campos muy importantes, desde las Umas, pasando por los entrenamientos, las estadísticas y las cartas (y si, son lo mas importante) para poder hacer estrategias de carreras y ganar.</p>
         </section>
         <section class="uraF">
-            <img src="Multimedia/Imagenes/uraFinale.png" alt="">
+            <img src="Multimedia/Imagenes/uraFinale.png" alt="Imagen representativa del modo URA Finale" title="URA Finale">
             <p>Cabe aclarar que esto es especialmente para los jugadores del URA Finale (Modo carrera del juego)</p>
         </section>
 
@@ -72,35 +72,35 @@
             <a href="uma.html" class="flex bgImg">
                 <h3>Ver más</h3>
             </a>
-            <div class="flex">
+            <div class="flex flexColumn">
                 <h3>Primero... ¿Qué son las Umas?</h3>
                 <p>Apartado rápido para conocer lo básico que necesitas saber para de las Umas, nos centraremos en algunos personajes, que tipo de corredoras son y características que se verán a mayor profundidad en otros apartados</p>
             </div>
         </section>
         <section class="cards flex">
             <a href="legacy.html" class="flex">
-                <div class="flex">
+                <div class="flex transition">
                 <h3>El legado</h3>
                 </div>
             </a>
             <a href="cards.html" class="flex">
-                <div class="flex">
+                <div class="flex transition">
                 <h3>Las cartas</h3>
                 </div>
             </a>
             <a href="train.html" class="flex">
-                <div class="flex">
+                <div class="flex transition">
                 <h3>Entrenamiento</h3>
                 </div>
             </a>
             <a href="stats.html" class="flex">
-                <div class="flex">
+                <div class="flex transition">
                 <h3>Estadísticas y estilos</h3>
                 </div>
             </a>
         </section>
         <section class="splitCont flex">
-            <div class="flex">
+            <div class="flex flexColumn">
                 <h3>Estrategía de carrera</h3>
                 <p>Aquí, luego de ver el resto de apartados todo se complementará el día de las carreras, saber donde poner a tu Uma no será tan fácil, y se deberá analizar todo para ponerla en una posición que la haga ganadora</p>
             </div>
@@ -113,14 +113,14 @@
             <h2>Si pierdes, no te desanimes</h2>
             <p>Es normal, hasta los grandes titanes o "ballenas" del juego iniciaron perdiendo varias veces, y aunque es un punto que se abarcará en los legados, tienes que saber que aun perdiendo, los legados formados por tus Umas harán que la próxima que vayas a entrenar sea cada vez más fuerte,  y cuando lo veas, tendrás un legado fuerte para poder progresar, ya que con los legado base es casi imposible destacar o ganar la carrera, lo que ayudará serán los legados que vayas formando.</p>
 
-            <p>Si, hay que jugar y perder varias veces, pero así se juega, y almenos hay diferentes personajes con los que jugar, así que diviértete y no te rindas.</p>
+            <p>Si, hay que jugar y perder varias veces, pero así se juega, y almenos hay diferentes personajes con los que jugar y disfrutar de sus propias historias, así que diviértete y no te rindas.</p>
         </section>
 
-        <section class="meme bgImg"></section>
+        <section class="meme bgImg" title="meme de Urara"></section>
 
         <section class="me flex">
             <p>Si llegaste hasta aquí agradecería que me dejarás una opinión en mi perfil de GitHub para ver que tal esta el sitio, si hay algo que mejorar o si esta feo, criticas constructivas siempre son bien recibidas y también espero haberte ayudado con tu build</p>
-            <img src="Multimedia/Imagenes/me.jpg" alt="">
+            <img src="Multimedia/Imagenes/me.jpg" alt="Foto del creador del sitio web">
         </section>
     </main>
 
@@ -130,10 +130,10 @@
             <p>Diseñador y desarrollador web FrontEnd con aspiraciones a diseñar y hacer grandes sitios web y crear una firma llamada "BlackWater Studios"</p>
         </div>
         <div class="flex">
-            <a href="https://github.com/JosephXZ1" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Git.png" alt=""></a>
-            <a href="https://www.instagram.com/joseph_xyp/" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Insta.png" alt=""></a>
-            <a href="https://x.com/El_XPartano" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Twit.png" alt=""></a>
-            <a href="https://www.reddit.com/user/ElEspartano209/" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Red_1.png" alt=""></a>
+            <a href="https://github.com/JosephXZ1" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Git.png" alt="Enlace a perfil de GitHub"></a>
+            <a href="https://www.instagram.com/joseph_xyp/" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Insta.png" alt="Enlace a perfil de Instagram"></a>
+            <a href="https://x.com/El_XPartano" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Twit.png" alt="Enlace a perfil de Twitter"></a>
+            <a href="https://www.reddit.com/user/ElEspartano209/" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Red_1.png" alt="Enlace a perfil de Reddit"></a>
         </div>
     </footer>
     <div class="copyright">
