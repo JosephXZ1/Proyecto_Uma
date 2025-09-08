@@ -1,0 +1,45 @@
+.fondo
+{
+    width: 100%;
+    height: 100vh;
+    padding: 0 5rem;
+    
+
+    position: relative;
+    overflow: hidden;
+    /* filter: blur(1px); */
+    justify-content: flex-start;
+}
+
+.fondo::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000081;
+}
+
+.fondo{background-image: url(../Multimedia/Imagenes/background_cards.jpg);}
+
+.fondo h2
+{
+    position: absolute;
+    font-family: "aleo", serif;
+    font-size: 6rem;
+    color: #eeeef0;
+    text-shadow: 5px 5px 5px #000;
+    z-index: 5;
+}
+
+
+
+
+.sw
+{
+    width: 10px;
+    height: 2000px;
+    opacity: 0;
+}

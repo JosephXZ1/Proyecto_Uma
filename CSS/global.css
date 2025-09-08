@@ -176,7 +176,7 @@ undefined
     cursor: pointer;
 }
 
-/* - - - - - - - - - - MENU DE NAVEGACION - - - - - - - - - - */
+/* MENU DE NAVEGACION */
 .navBar
 {
     position: fixed;
@@ -231,6 +231,27 @@ undefined
     width: 10px;
     height: 2000px;
 }
+
+/* ESTILOS PARA INICIO DE SCROLL */
+/* Estado inicial (transparente) */
+.header
+{
+    background-color: transparent;
+    box-shadow: 0 2px 5px transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header .headerButton{background-color: transparent;}
+
+/* Estado cuando hay scroll (adopta color) */
+.header.scrolled 
+{
+    background-color: #eeeef0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled .headerButton{background-color: #93df37;}
+.header.scrolled .headerButton:hover{background-color: #008d0a;}
 
 /* - - - - - - - - - - BOTON DE SCROLL HACIA ARRIBA - - - - - - - - - - */
 .scrollToTop

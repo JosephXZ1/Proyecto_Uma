@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las cartas</title>
+
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/cards.css">
+    <link rel="icon" type="image/png" href="Multimedia/Imagenes/L-tab.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_circle_up" />
+</head>
+<body>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <header class="header flex">
+        <a href="index.html" class="brand flex">
+            <h1>Cómo jugar</h1>
+            <img src="Multimedia/Imagenes/logo_Uma.png" alt="Página principal">
+        </a>
+        <!-- botón como button para accesibilidad -->
+        <button class="headerButton flex transition" aria-label="Abrir menú">
+            <img id="menuIcon" src="Multimedia/Imagenes/menu2.png" alt="Menú">
+        </button>
+        <nav class="navBar flex">
+            <ul class="flex">
+                <li class="fullSize"><a href="umas.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuU.png" alt="categoria de Umas">Las Umas</a></li>
+                <li class="fullSize"><a href="legacy.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuL.png" alt="categoria de legado">Legado</a></li>
+                <li class="fullSize"><a href="train.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuT.png" alt="categoria de entrenamiento">Entrenamiento</a></li>
+                <li class="fullSize"><a href="cards.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuC.png" alt="categoria de cartas">Cartas</a></li>
+                <li class="fullSize"><a href="stats.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuS.png" alt="categoria de estadisticas">Estadísticas</a></li>
+                <li class="fullSize"><a href="strategy.html" class="flex fullSize"><img src="Multimedia/Imagenes/menuH.png" alt="categoria de estrategia">Estrategia</a></li>
+            </ul>
+            <!-- contenido -->
+        </nav>
+    </header>
+    <main>
+        <section class="fondo flex bgImg">
+            <h2>Las cartas</h2>
+        </section>
+    </main>
+
+    <img src="Multimedia/Imagenes/BlackWaterLogo_JL.png" alt="" class="sw">
+    
+    <!--
+    <footer class="flex">
+        <div>
+            <h3>Joseph_X</h3>
+            <p>Diseñador y desarrollador web FrontEnd con aspiraciones a diseñar y hacer grandes sitios web y crear una firma llamada "BlackWater Studios"</p>
+        </div>
+        <div class="flex">
+            <a href="https://github.com/JosephXZ1" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Git.png" alt="Enlace a perfil de GitHub"></a>
+            <a href="https://www.instagram.com/joseph_xyp/" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Insta.png" alt="Enlace a perfil de Instagram"></a>
+            <a href="https://x.com/El_XPartano" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Twit.png" alt="Enlace a perfil de Twitter"></a>
+            <a href="https://www.reddit.com/user/ElEspartano209/" class="flex" target="_blank" rel="noreferrer noopener"><img src="Multimedia/Imagenes/L-Red_1.png" alt="Enlace a perfil de Reddit"></a>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p class="flex">© 2025 Web-site by <img src="Multimedia//Imagenes/BlackWaterLogoW.png" alt="blackwater logo" title="BlackWater St Logo"> | All rights reserved | Made with ❤︎.</p>
+    </div>-->
+
+    <a href="#" class="scrollToTop flex" id="scrollBtn">
+        <span class="material-symbols-outlined">arrow_circle_up</span>
+    </a>
+
+    <script>
+        // ====== JS para el NavBar ======
+        const btn = document.querySelector(".headerButton");
+        const nav = document.querySelector(".navBar");
+
+        btn.addEventListener("click", (e) =>
+        {
+            e.preventDefault(); // evitar que el <a> recargue la página
+            nav.classList.toggle("active"); // alterna mostrar/ocultar
+        });
+
+        // ====== JS para el Botón de menú ======
+        const header = document.querySelector("header");
+        const headerButton = document.querySelector(".headerButton img");
+
+        window.addEventListener("scroll", () => 
+        {
+            if (window.scrollY > 50)
+            {
+                header.classList.add("scrolled");
+                headerButton.src = "Multimedia/Imagenes/menu1.png"; // Imagen al hacer scroll
+            }
+            else
+            {
+                header.classList.remove("scrolled");
+                headerButton.src = "Multimedia/Imagenes/menu2.png"; // Imagen inicial
+            }
+        });
+    </script>
+    <script type="text/javascript" src="JavaScript/botonScroll.js"></script>    
+</body>
+</html>
