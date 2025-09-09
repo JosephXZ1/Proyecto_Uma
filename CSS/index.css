@@ -45,7 +45,7 @@
 }
 
 /* - - - - - - - - - - CONTENEDORES BASICOS - - - - - - - - - - */
-.text, .uraF
+.uraF
 {
     margin: 7rem auto;
     width: 85%;
@@ -53,24 +53,10 @@
     color: #707070;
 }
 
-.text h2
-{
-    margin-bottom: 2rem;
-    font-family: "Aleo", serif;
-    font-size: 3.7rem;
-    font-weight: 700;
-}
-
-.text p, .uraF p
+.uraF p
 {
     margin-top: 1rem;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.7rem;
-    font-weight: 450;
-}
-
-.uraF p
-{
     font-size: 1.6rem;    
     font-weight: 600;
 }
