@@ -50,7 +50,6 @@
     margin: 7rem auto;
     width: 85%;
     text-align: center;
-    color: #707070;
 }
 
 .uraF p
@@ -86,7 +85,6 @@
     height: 100%;
     padding: 3rem; 
     text-align: center;
-    color: #707070;
     background-color: #eeeef0;
 }
 
@@ -108,7 +106,7 @@
     top: 0;
     left: 0;
     background-color: transparent;
-    z-index: 10;
+    z-index: 8;
 }
 
 .splitCont a:hover::before{background-color: #00000081;}
@@ -122,7 +120,7 @@
     text-shadow: 3px 3px 1px transparent;
     position: absolute;
     transition: all 0.3s ease;
-    z-index: 11;
+    z-index: 9;
 }
 
 .splitCont a:hover h3
@@ -228,7 +226,7 @@
     height: 95%;
     padding: 2rem;
     border-radius: 0.8rem;
-    z-index: 10;
+    z-index: 9;
     background-color: transparent;
 }
 
@@ -241,7 +239,7 @@
     font-weight: 500;
     text-align: center;
     color: transparent;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 }
 
 .cards a:nth-child(3) div h3{font-size: 2rem;}
@@ -274,7 +272,6 @@
     font-size: 1.53rem;
     font-weight: 450;
     margin: 0 auto;
-    color: #707070;
 }
 
 .me img

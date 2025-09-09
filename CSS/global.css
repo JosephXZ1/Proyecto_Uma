@@ -12,6 +12,7 @@ html
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
+    color: #707070;
     scroll-behavior: smooth;
 }
 
@@ -46,7 +47,6 @@ html
     margin: 7rem auto;
     width: 85%;
     text-align: center;
-    color: #707070;
 }
 
 .text h2
@@ -291,7 +291,7 @@ undefined
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.3s ease;
-    z-index: 1000;
+    z-index: 50;
 }
 
 .scrollToTop.visible

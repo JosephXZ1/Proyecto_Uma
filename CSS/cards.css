@@ -33,18 +33,18 @@
 .stats div:first-child
 {
     margin-top: 0;
-    background: linear-gradient(90deg, #7ed4fe, transparent) #37b7f4;
+    background: linear-gradient(45deg, #7ed4fe, transparent) #37b7f4;
 }
 
-.stats div:nth-child(2){background: linear-gradient(90deg, #ff8676, transparent) #ff6b5a;}
-.stats div:nth-child(3){background: linear-gradient(90deg, #ffb700, transparent) #ffa424;}
-.stats div:nth-child(4){background: linear-gradient(90deg, #ff8eae, transparent) #ff639a;}
+.stats div:nth-child(2){background: linear-gradient(45deg, #ff8676, transparent) #ff6b5a;}
+.stats div:nth-child(3){background: linear-gradient(45deg, #ffb700, transparent) #ffa424;}
+.stats div:nth-child(4){background: linear-gradient(45deg, #ff8eae, transparent) #ff639a;}
 
 
 .stats div:last-child
 {
     margin-bottom: 0;
-    background: linear-gradient(90deg, #00d0ac, transparent) #00b285;
+    background: linear-gradient(45deg, #00d0ac, transparent) #00b285;
 }
 
 .stats div:first-child:hover{background-color: #2196f3;}
@@ -63,20 +63,93 @@
 .stats div img{width: 4rem;}
 
 /* CONTENEDOR DE INFORMACIÓN */
-.stats .tooltip {
+.stats .desc
+{
     position: absolute;
-    bottom: 120%;
+    bottom: -53%;
     left: 50%;
     transform: translateX(-50%);
-    background: #333;
-    color: #fff;
-    font-size: 1.4rem;
+    background: linear-gradient(135deg, #fff 50%, #ecedf0 52%);
+    color: #744a22;
+    font-size: 1.3rem;
+    font-weight: 550;
     padding: 0.6rem 1rem;
     border-radius: 8px;
+    border: 2.5px solid #707070;
     white-space: nowrap;
-    opacity: 0;
     pointer-events: none;
+    opacity: 0;    
     transition: opacity 0.3s ease;
 }
 
-.stats div:hover .tooltip{opacity: 1;}
+.stats div:hover .desc{opacity: 1;}
+
+/* - - - - - - - - - - EJEMPLO DE ELECCION DE CARTAS - - - - - - - - - - */
+.chart
+{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.chart > img{width: 50%;}
+
+.info
+{
+    width: 50%;
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.grid4
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.cell
+{
+    gap: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.cell img:first-child {width: 3.3rem;}
+
+.cell img:nth-child(2){width: 1.7rem;}
+
+.info p:not(:last-child){margin-bottom: 1rem;}
+
+/* - - - - - - - - - - CATEGORÍA DE CARTAS - - - - - - - - - - */
+main > section:nth-of-type(6) {margin-bottom: 0;}
+
+
+.cardCat
+{
+    width: 80%;
+    height: fit-content;
+    margin: 3rem auto 4rem auto;
+    gap: 5rem;
+}
+
+.cardCat div
+{
+    width: 23%;
+    height: 51vh;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cardCat div:hover{transform: scale(1.1);}
+
+.cardCat div:first-child{background-image: url("../Multimedia/Imagenes/cards/SR.png");}
+.cardCat div:nth-child(2){background-image: url("../Multimedia/Imagenes/cards/SR.png");}
+.cardCat div:nth-child(3){background-image: url("../Multimedia/Imagenes/cards/SSR.png");}
+
+/*
+
+*/
