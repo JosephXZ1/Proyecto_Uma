@@ -4,6 +4,14 @@
     height: 2000px;
     opacity: 0;
 } */
+/* CLASES GENERICAS DE LAS CARTAS */
+.contain
+{
+    height: fit-content;
+    margin: 2rem auto;
+}
+
+
 /* - - - - - - - - - - FONDO DE CONTENEDOR INICIAL - - - - - - - - - - */
 .fondo::before{background-image: url("../Multimedia/Imagenes/cards/background_cards.jpg");}
 
@@ -12,8 +20,6 @@
 {
     padding: 2rem;
     width: 70%;
-    height: fit-content;
-    margin: 2rem auto;
 }
 
 .stats div
@@ -26,7 +32,6 @@
     border-radius: 20px;
     justify-content: space-between;
     cursor: pointer;
-    transition: background-color 0.5s;
     position: relative;
 }
 
@@ -39,19 +44,21 @@
 .stats div:nth-child(2){background: linear-gradient(45deg, #ff8676, transparent) #ff6b5a;}
 .stats div:nth-child(3){background: linear-gradient(45deg, #ffb700, transparent) #ffa424;}
 .stats div:nth-child(4){background: linear-gradient(45deg, #ff8eae, transparent) #ff639a;}
+.stats div:nth-child(5){background: linear-gradient(45deg, #00d0ac, transparent) #00b285;}
 
 
 .stats div:last-child
 {
     margin-bottom: 0;
-    background: linear-gradient(45deg, #00d0ac, transparent) #00b285;
+    background: linear-gradient(45deg, #ffdd8d, transparent) #ecc45b;
 }
 
 .stats div:first-child:hover{background-color: #2196f3;}
 .stats div:nth-child(2):hover{background-color: #ef4532;}
 .stats div:nth-child(3):hover{background-color: #ff9400;}
 .stats div:nth-child(4):hover{background-color: #ff3e82;}
-.stats div:last-child:hover{background-color: #009771;}
+.stats div:nth-child(5):hover{background-color: #009771;;}
+.stats div:last-child:hover{background-color: #e1b246;}
 
 .stats div p
 {
@@ -85,21 +92,18 @@
 .stats div:hover .desc{opacity: 1;}
 
 /* - - - - - - - - - - EJEMPLO DE ELECCION DE CARTAS - - - - - - - - - - */
-.chart
-{
-    width: 80%;
-    margin: 2rem auto;
-}
+.chart{width: 80%;}
 
-.chart > img{width: 50%;}
+.chart > img, .split > img{width: 50%; border-radius: 1rem;}
 
-.info
+/* Este comparte clase con .split, apartado más abajo */
+.info, .split div
 {
     width: 50%;
     padding: 2rem;
     flex-direction: column;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
@@ -108,7 +112,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 
 .cell
@@ -119,20 +123,16 @@
 }
 
 .cell img:first-child {width: 3.3rem;}
-
 .cell img:nth-child(2){width: 1.7rem;}
 
-.info p:not(:last-child){margin-bottom: 1rem;}
+.info p, .split div p{margin: 1rem 0;}
 
 /* - - - - - - - - - - CATEGORÍA DE CARTAS - - - - - - - - - - */
-main > section:nth-of-type(6) {margin-bottom: 0;}
-
+main > section:nth-of-type(6) {margin-bottom: 4rem;}
 
 .cardCat
 {
     width: 80%;
-    height: fit-content;
-    margin: 3rem auto 4rem auto;
     gap: 5rem;
 }
 
@@ -146,10 +146,20 @@ main > section:nth-of-type(6) {margin-bottom: 0;}
 
 .cardCat div:hover{transform: scale(1.1);}
 
-.cardCat div:first-child{background-image: url("../Multimedia/Imagenes/cards/SR.png");}
+.cardCat div:first-child{background-image: url("../Multimedia/Imagenes/cards/R.png");}
 .cardCat div:nth-child(2){background-image: url("../Multimedia/Imagenes/cards/SR.png");}
 .cardCat div:nth-child(3){background-image: url("../Multimedia/Imagenes/cards/SSR.png");}
 
-/*
+/* CONTENEDORES DE CARTAS UNCAP */
+.split{width: 85%;}
 
-*/
+.split div{padding: 0 1rem;}
+
+.split div:last-child img{height: 23px;}
+
+/* HABILIDADES DE CARTA */
+
+/* CARTAS PAL */
+
+main > section:nth-of-type(11) {margin-bottom: 2rem;}
+main > section:nth-of-type(12) .pal{background-image: url('../Multimedia/Imagenes/cards/pal.png');}
