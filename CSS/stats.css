@@ -1,0 +1,2 @@
+/* - - - - - - - - - - FONDO DE CONTENEDOR INICIAL - - - - - - - - - - */
+.fondo::before{background-image: url("../Multimedia/Imagenes/stat/background_stats.jpg");}

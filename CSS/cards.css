@@ -160,5 +160,6 @@ main > section:nth-of-type(6) {margin-bottom: 4rem;}
 
 /* CARTAS PAL */
 
-main > section:nth-of-type(11) {margin-bottom: 2rem;}
-main > section:nth-of-type(12) .pal{background-image: url('../Multimedia/Imagenes/cards/pal.png');}
+main > section:nth-of-type(12) {margin-bottom: 2rem;}
+
+#pal{background-image: url('../Multimedia/Imagenes/cards/pal.png');}

@@ -1,0 +1,4 @@
+
+
+/* - - - - - - - - - - FONDO DE CONTENEDOR INICIAL - - - - - - - - - - */
+.fondo::before{background-image: url("../Multimedia/Imagenes/uma/background_uma.jpg");}
