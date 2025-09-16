@@ -49,7 +49,14 @@ De ahi, eso es en lo que te debes fijar a la hora de hacer tu mazo, que stat es 
 
 
 -ENTRENAMIENTOS
-El entrenamiento es crucial
+El entrenamiento es crucial para progresar en el juego, y aqui nos vamos a centrar en el gameplay y en lo que se basa el juego: gestion de recursos, porque si, el juego durante la carrera te dará ciertas opciones de entrenamiento y donde dependerá de tu habilidad de gestion, toma de decisiones y vision a largo plazo para que tu gameplay de sus frutos, pero empecemos por lo basico, la interfaz, seguro habrás visto demasiadas cosas, pero calma que te explico.
+Primero esta la interfaz principal, que es donde pasas la mayor parte del tiempo, aqui hay diferentes cosas, entre ellas esta algo llamado 'Turns' que significa cuantos turnos tienes antes de una carrera, esos turnos tienen que ser aprovechadois al maximo en entrenamientos, no en otra cosa, pues habrá veces que tengas mas de 10 turnos que parezca que puedes llevarla tranquilo, pero otras veces tendrás solo 5, 4 o hasta 3 que te pondrá en aprietos si no aprovechaste bien los turnos.
+Al lado estan los objetivos, llamados "goals" que tu Uma debe cumplir para avanzar en la carrera, en detalles (details) se puede apreciar los diferentes objetivos, normalmente es quedar en X posicion en la carrera, inicialmente el primero es hacer que tu Uma debute sin importar en que posicion quede, de ahí los siguientes objetivos pueden ser quedar en 5ta posicion, en 3ra, en 2da o 1ra, todo depende del personaje ya que no todas tendrán los mismo objetivos, algunas tendrán objetivos mas laxos y sencillos y otras exigiran estar en el podio o ganar carreras, escoge sabiamente a tu Uma.
+Bajo los objetivos habrá una barra de energía en colores azul-verde-rojo, como intuiras, es la barra de energía de tu Uma, cada entrenamiento que hagas ira drenando la barra de energía, algunos mas y otros menos (como se verá mas adelante) pero ten en cuenta que mantener la barra de energía en alto siempre es prioridad para entrenar mas y evitar fallar en el intento, pues fallar traera consecuencias.
+Al lado esta Mood, ------
+En la parte baja esta el boton 'Full stats' que simplemente te desplegará todas las estadísticas e información de tu personaje, util para saber que tantas condiciones, habilidades y cosas tienes.
+La barra llena de numeros simplemente es las stats que tienes en ese momento, que tan altas o bajas las tienes en terminos numericos.
+De ahí abajo tienes los diferentes botones de accion que seran las diferentes cosas que puedes hacer, desde entrenar (el mas grande y principal que esta en medio), descansar, el de habilidades 'skills', 'infimary' (algo asi como la enfermeria), recreación y carreras, todos a excepción de 'skills' consumirán un turno, asi que debes tomar decisiones cruciales, tomar descansos solo cuando sea necesario (cuando de plano ya tienes poca energía) o curar alguna condicion mala que tengas (puedes ganar tanto una buena como una mala) que afecte al mood y entrenamiento, pero casi todos los turnos deben irse a entrenar o carreras dependiendo de tu caso.
 
 -ESTADÍSTICAS Y ESTILOS
 
