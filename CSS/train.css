@@ -3,7 +3,7 @@
 
 .info
 {
-    margin: auto;
+    margin: 5rem auto;
     width: 90%;
     height: fit-content;
 }
@@ -78,7 +78,4 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.trigger:hover
-{
-    color: #f9790e;
-}
+.trigger:hover{color: #f9790e;}
