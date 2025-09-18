@@ -51,7 +51,7 @@
     line-height: 2rem;
 }
 
-.infoUma li:last-child
+.infoUma li:last-child, .infoUma span
 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -59,3 +59,17 @@
 }
 
 main > section:nth-of-type(4), main > section:nth-of-type(6){margin: 0 auto;}
+main > section:nth-of-type(8){margin: 3rem auto;}
+
+
+.list
+{
+    margin: auto;
+    width: 70%; 
+    padding-left: 0;
+    font-size: 1.5rem;
+    font-weight: 430;
+    list-style-type: '✅︎'; /* Remove default bullet points */
+}
+
+.list li{margin: 1rem 0;padding-left: 1rem;}

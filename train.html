@@ -48,6 +48,26 @@
         <section class="fondo flex bgImg">
             <h2>El entrenamiento</h2>
         </section>
+
+        <section class="text">
+            <p>El entrenamiento es crucial para progresar en el juego, y aqui nos vamos a centrar en el gameplay y en lo que se basa el juego: gestion de recursos, porque si, el juego durante la carrera te dará ciertas opciones de entrenamiento y donde dependerá de tu habilidad de gestion, toma de decisiones y vision a largo plazo para que tu gameplay de sus frutos, pero empecemos por lo basico, la interfaz, seguro habrás visto demasiadas cosas, pero calma que te explico.</p>
+        </section>
+
+        <section class="info flex">
+            <img src="Multimedia/Imagenes/train/train.jpg" alt="">
+            <div class="text-block">
+                <p>Primero esta algo llamado <span>Turns</span> que son cuantos turnos tienes antes de una carrera, tienen que ser aprovechados al maximo en entrenamientos, pues habrá veces que tengas solo 5, 4 o hasta 3 que te pondrá en aprietos si no aprovechaste bien los turnos.</p>
+                <p>Luego estan los <span>goals</span> que cumplir para avanzar en la carrera, en <button class="trigger transition" data-popup="details" title="Pasar el cursor sobre la imagen para que desaparezca">details</button> se puede ver los diferentes objetivos (quedar en X posicion en carreras) los objetivos pueden variar dependiendo del personaje ya que no todas tendrán los mismo objetivos.</p>
+                <p>Habrá una barra de energía en colores <span>azul-verde-rojo</span>, es la barra de energía de tu Uma, cada entrenamiento que hagas la ira drenando, algunos mas y otros menos, mantenerla en alto siempre es prioridad para entrenar mas y evitar fallar.</p>
+                <p>Al lado está el <button class="trigger transition" data-popup="mood">mood</button> que basicamente es el estado de animo de tu Uma, estado al que tienes que prestarle atencion y cerciorarte que siempre este en <span>Great</span>, <span>Good</span> o por lo menos <span>Normal</span> ya que puede beneficiar o perjudicar entrenamientos o carreras.</p>
+                <p>La barra llena de numeros simplemente es las stats que tienes en ese momento, que tan altas o bajas las tienes en terminos numericos.</p>
+                <p>Abajo estarán las cosas que puedes hacer, desde <span>entrenar</span>, <span>descansar</span>, <span>habilidades</span>, <span>enfermería</span>, <span>recreación</span> y <span>carreras</span>, todos a excepción de las habilidades consumirán un turno, asi que debes tomar decisiones cruciales, tomar descansos solo cuando sea necesario o curar alguna condicion mala que tengas, pero casi todos los turnos deben irse a entrenar o carreras dependiendo de tu caso.</p>
+            </div>
+
+            <!-- Los popups -->
+            <div id="details" class="popup flex transition"><img src="Multimedia/Imagenes/train/Objectives.jpg" alt=""></div>
+            <div id="mood" class="popup flex transition"><img src="Multimedia/Imagenes/train/Mood.jpg" alt=""></div>
+        </section>
     </main>
 
     <!-- <footer class="flex">
@@ -66,12 +86,42 @@
         <p class="flex">© 2025 Web-site by <img src="Multimedia//Imagenes/BlackWaterLogoW.png" alt="blackwater logo" title="BlackWater St Logo"> | All rights reserved | Made with ❤︎.</p>
     </div> -->
 
-
     <a href="#" class="scrollToTop flex" id="scrollBtn">
         <span class="material-symbols-outlined">arrow_circle_up</span>
     </a>
 
     <script type="text/javascript" src="JavaScript/header.js"></script>
     <script type="text/javascript" src="JavaScript/botonScroll.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () =>
+        {
+            const triggers = document.querySelectorAll(".trigger");
+            const popups = document.querySelectorAll(".popup");
+
+            triggers.forEach(trigger =>
+            {
+                trigger.addEventListener("mouseenter", () =>
+                {
+                    const targetId = trigger.getAttribute("data-popup");
+                    const targetPopup = document.getElementById(targetId);
+
+                    // Cierra los demás
+                    popups.forEach(p => p.classList.remove("active"));
+
+                    // Abre el popup correspondiente
+                    if (targetPopup) targetPopup.classList.add("active");
+                });
+            });
+
+            // Opcional: cerrar popup al salir del área
+            popups.forEach(popup =>
+            {
+                popup.addEventListener("mouseleave", () =>
+                {
+                    popup.classList.remove("active");
+                });
+            });
+        });
+    </script>
 </body>
 </html>
