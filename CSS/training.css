@@ -36,20 +36,6 @@
 
 .info .text-block p{margin: 1rem 0;}
 
-/* Estilos de texto resaltado */
-.bold{font-weight: 530;}
-
-.bold[data-color="blue"]{color: #7395f7;}
-.bold[data-color="energy"]{  background: -webkit-linear-gradient(45deg, #2fb2fd 10%, #20f03a 55%, #fe5b1f 75%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
-.bold[data-color="pink"]{color: #fe3074;}
-.bold[data-color="strongOrange"]{color: #fd7c38;}
-.bold[data-color="orange"]{color: #fba904;}
-.bold[data-color="green"] {color: #6fc61e;}
-.bold[data-color="skyBlue"] {color: #4bcfdd;}
-.bold[data-color="purple"]{color: #aa79f4;}
-
-.bold[data-color="rainbow"]{background: -webkit-linear-gradient(45deg, #2fb2fd 10%, #e6f020 55%, #fe1f9a 75%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
-
 /* estilos de los activadores de popup */
 .trigger
 {
