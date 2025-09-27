@@ -221,7 +221,6 @@ undefined
     right: -21vw;
     width: 21vw;
     height: 85vh;
-    padding: 1.7rem;
     background: #008d0a;
     flex-direction: column;
     transition: right 0.3s ease-in-out;
@@ -232,41 +231,38 @@ undefined
 .navBar ul
 {
     width: 100%;
-    height: 90%;
+    height: 100%;
     flex-direction: column;
     list-style: none;
 }
 
-.navBar li{margin: 3px 0;}
-
 .navBar a
 {
-    font-family: "Montserrat", sans-serif;
+    padding: 3vh 0vw;
+    font-family: "Aleo", serif;
     font-weight: 650;
-    font-size: 1.5rem;
-    font-style: normal;
-    color: #f4ffcc;
+    font-size: 1.7rem;
+    color: transparent;
+    background-color: transparent;
+    text-shadow: 1px 1px 2px transparent;
     text-decoration: none;
     justify-content: flex-start;
     transition: all ease 0.3s;
 }
 
+.navBar li[data-nav="uma"]{background-image: url('../Multimedia/Imagenes/navUma.jpg');}
+.navBar li[data-nav="legacy"]{background-image: url('../Multimedia/Imagenes/navLegacy.jpg');}
+.navBar li[data-nav="training"]{background-image: url('../Multimedia/Imagenes/navTraining.jpg');}
+.navBar li[data-nav="cards"]{background-image: url('../Multimedia/Imagenes/navCards.jpg');}
+.navBar li[data-nav="stats"]{background-image: url('../Multimedia/Imagenes/navStats.jpg');}
+.navBar li[data-nav="strategy"]{background-image: url('../Multimedia//Imagenes/navStrategy.jpg');}
+
 .navBar a:hover
 {
-    color: #f7e41a;
-    font-style: oblique 7deg;
-}
-
-.navBar a img
-{
-    width: 2.7rem;
-    height: auto;
-}
-
-#sos
-{
-    width: 10px;
-    height: 2000px;
+    padding-left: 2vw;
+    background-color: #00000036;
+    text-shadow: 2px 2px 1.5px #000;
+    color: #fff;
 }
 
 /* ESTILOS PARA INICIO DE SCROLL */
